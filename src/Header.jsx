@@ -1,4 +1,4 @@
-const Header = () => (
+const Header = (props) => (
   <header className="app-header">
     <h1 className="app-header__title">Super Sticky Notes</h1>
     <aside className="app-header__controls">
@@ -17,6 +17,8 @@ const Header = () => (
           id="search"
           placeholder="ToDo"
           className="search"
+          value={props.searchText}
+          readOnly
         />
       </div>
     </aside>
